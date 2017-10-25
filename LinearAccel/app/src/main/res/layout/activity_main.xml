@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.weymouth.linearaccel.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:layout_height="240dp"
+        tools:layout_width="360dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/graph"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/labelCurrentX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Current X:" />
+
+        <TextView
+            android:id="@+id/currentX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Hello World!"
+            />
+
+        <TextView
+            android:id="@+id/labelCurrentY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Current Y:"
+            />
+
+        <TextView
+            android:id="@+id/currentY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Hello World!"
+            />
+
+        <TextView
+            android:id="@+id/labelCurrentZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Current Z:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="216dp"
+            />
+
+        <TextView
+            android:id="@+id/currentZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Hello World!"
+            />
+
+        <TextView
+            android:id="@+id/labelMaxX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Max X:" />
+
+        <TextView
+            android:id="@+id/maxX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Hello World!"
+            />
+
+        <TextView
+            android:id="@+id/labelMaxY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Max Y:"
+            />
+
+        <TextView
+            android:id="@+id/maxY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Hello World!"
+            />
+
+        <TextView
+            android:id="@+id/labelMaxZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Max Z:"
+            />
+
+        <TextView
+            android:id="@+id/maxZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Hello World!"
+            />
+
+    </GridLayout>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        tools:layout_height="80dp"
+        tools:layout_width="360dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+
+
+</android.support.constraint.ConstraintLayout>
